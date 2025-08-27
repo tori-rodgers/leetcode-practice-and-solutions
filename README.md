@@ -1,4 +1,4 @@
-# leetcode-practice-and-solutions
+# Leetcode Practice and Solutions
 
 My Leetcode account:  https://leetcode.com/u/tori-rodgers/
 
