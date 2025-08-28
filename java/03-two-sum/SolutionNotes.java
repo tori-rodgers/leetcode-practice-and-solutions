@@ -34,7 +34,7 @@ class SolutionNotes {
 
       public static void main(String[] args) {
 
-        Solution sol = new Solution();
+        SolutionNotes sol = new SolutionNotes();
 
         int[] test1 = sol.twoSum(new int[]{2, 7, 11, 15}, 9);
         int[] test2 = sol.twoSum(new int[]{3, 2, 4}, 6);
