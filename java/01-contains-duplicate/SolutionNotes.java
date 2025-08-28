@@ -1,18 +1,26 @@
+
+import java.util.HashSet;
+import java.util.Set;
+
 //Given an integer array nums, return true if any value appears more than once in the array, otherwise return false.
 
-import java.util.Arrays;
+
 
 // Time & Space complexity (O(n)) ✅ 
 
 public class SolutionNotes {
 
     public boolean containsDuplicate(int[] nums) {
+        Set<Integer> seen = new HashSet<>();            // Set is a collection that does not allow duplicate elements
+                                                        // HashSet allow contains, add operations
+        for (int num : nums) {
+            if (seen.contains(num)) {                   // If seen HashSet contains the element (num), return true.
+                return true;
+            }
+            seen.add(num);                              // Adds the element to the seen Hashset
+        }
 
-        return Arrays.stream(nums).distinct().count() < nums.length;            /* Arrays.stream(nums) converts the int[] nums array into an IntStream (stream of primitive int values) 
-                                                                                    which supports functional-style operations like distinct.
-                                                                                    .distinct() returns a stream containing only unique values.
-                                                                                    .count() counts how many unique elements are in the stream.
-                                                                                    < nums.length compares the number of unique elements to the original array length. */
+        return false;
     }
 
     public static void main(String[] args) {
