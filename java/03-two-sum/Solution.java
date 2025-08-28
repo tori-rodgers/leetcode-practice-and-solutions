@@ -7,7 +7,7 @@ Return the answer with the smaller index first. */
 
 import java.util.HashMap;
 
-public class Solution {
+class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> seenMap = new HashMap<>();
 

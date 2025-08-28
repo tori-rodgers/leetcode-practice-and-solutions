@@ -9,7 +9,7 @@ Return the answer with the smaller index first. */
 import java.util.Arrays;
 import java.util.HashMap;
                                                                 // One Pass because it loops through the array only once
-public class SolutionNotes {
+class SolutionNotes {
     public int[] twoSum(int[] nums, int target) {               // Method twoSum that takes an array of integers nums and a target sum
 
         HashMap<Integer, Integer> prevMap = new HashMap<>();
