@@ -3,7 +3,7 @@
 // Time Complexity O(n + m) ✅                  - One pass through both strings (represented as n and m)
 // Space Complexity O(1) ✅                     - Has Fixed space, only 26 characters at most
 
-public class SolutionNotes {
+class SolutionNotes {
 
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
